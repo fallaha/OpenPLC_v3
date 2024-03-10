@@ -50,7 +50,8 @@ function linux_install_deps {
         $1 zypper in -y curl make automake gcc gcc-c++ kernel-devel pkg-config bison flex autoconf libtool openssl-devel cmake libmodbus-devel
         $1 zypper in -y python python-xml python3 python3-pip 
     else
-        fail "Unsupported linux distro."
+
+        echo "Unsupported linux distro."
     fi
 }
 
@@ -287,7 +288,7 @@ elif [ "$1" == "linux" ]; then
     install_py_deps
     install_all_libs sudo
     [ "$2" == "ethercat" ] && install_ethercat
-    install_systemd_service sudo
+    #install_systemd_service sudo
     finalize_install linux
 
 elif [ "$1" == "docker" ]; then

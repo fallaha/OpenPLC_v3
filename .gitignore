@@ -22,3 +22,17 @@ webserver/scripts/ethercat
 
 # Runtime directories
 .venv
+utils/
+install_log.txt
+
+webserver/core/Config0.c
+webserver/core/Config0.h
+webserver/core/Config0.o
+webserver/core/LOCATED_VARIABLES.h
+webserver/core/openplc
+webserver/core/POUS.c
+webserver/core/POUS.h
+webserver/core/Res0.c
+webserver/core/Res0.o
+webserver/core/VARIABLES.csv
+
